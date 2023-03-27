@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       title: 'Péstaña app',
       theme: ThemeData(
         // This is the theme of your application.
-        primarySwatch: Colors.amber,
+        primarySwatch: Colors.lightBlue,
       ),
       home: MyHomePage(),
     );
@@ -34,28 +34,28 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(
           bottom: TabBar(
             isScrollable: true,
-            indicatorColor: Colors.black12,
+            indicatorColor: Colors.redAccent,
 
             indicatorSize: TabBarIndicatorSize.tab,
 
             indicator: BoxDecoration(
                 borderRadius: BorderRadius.circular(50), // Creates border
-                color: Colors.deepOrange), //Change background color from here
+                color: Colors.pinkAccent), //Change background color from here
             tabs: [
-              Tab(icon: Icon(Icons.flight)),
-              Tab(icon: Icon(Icons.directions_transit)),
-              Tab(icon: Icon(Icons.directions_car)),
+              Tab(icon: Icon(Icons.zoom_out_outlined)),
+              Tab(icon: Icon(Icons.vape_free_outlined)),
+              Tab(icon: Icon(Icons.label_important_outline)),
               Tab(icon: Icon(Icons.safety_divider)),
               Tab(icon: Icon(Icons.gamepad)),
             ],
           ),
-          title: Text('Tabs Demo'),
+          title: Text('Tabs Arrieta Villegas'),
         ),
         body: TabBarView(
           children: [
-            Icon(Icons.flight, size: 350),
-            Icon(Icons.directions_transit, size: 350),
-            Icon(Icons.directions_car, size: 350),
+            Icon(Icons.zoom_out_outlined, size: 350),
+            Icon(Icons.vape_free_outlined, size: 350),
+            Icon(Icons.label_important_outline, size: 350),
             Icon(Icons.gamepad, size: 350),
             Icon(Icons.safety_divider, size: 350),
           ],
